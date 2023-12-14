@@ -1,0 +1,31 @@
+class Permissions {
+  static const String listElections = "elections:list";
+  static const String createElections = "elections:create";
+  static const String readElections = "elections:view";
+  static const String updateElections = "elections:update";
+  static const String deleteElections = "elections:delete";
+  static const String startElections = "elections:start";
+  static const String endElections = "elections:end";
+  static const String listCandidates = "candidates:list";
+  static const String createCandidates = "candidates:create";
+  static const String readCandidates = "candidates:view";
+  static const String updateCandidates = "candidates:update";
+  static const String deleteCandidates = "candidates:delete";
+  static const String listUsers = "users:list";
+  static const String createUsers = "users:create";
+  static const String readUsers = "users:view";
+  static const String updateUsers = "users:update";
+  static const String deleteUsers = "users:delete";
+  static const String verifyUsers = "users:verify";
+  static const String createVotes = "votes:create";
+  static const String positions = "positions:list";
+  static const String createPositions = "positions:create";
+  static const String readPositions = "positions:view";
+  static const String updatePositions = "positions:update";
+  static const String deletePositions = "positions:delete";
+  static const String listRoles = "roles:list";
+  static const String createRoles = "roles:create";
+  static const String readRoles = "roles:view";
+  static const String updateRoles = "roles:update";
+  static const String deleteRoles = "roles:delete";
+}

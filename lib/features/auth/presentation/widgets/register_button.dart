@@ -1,0 +1,39 @@
+import 'package:flutter/material.dart';
+
+class AccountAvailabilityWidget extends StatelessWidget {
+  final String text;
+  final String actionText;
+  final VoidCallback? onTap;
+  const AccountAvailabilityWidget({
+    super.key,
+    required this.text,
+    required this.actionText,
+    required this.onTap,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: onTap,
+      behavior: HitTestBehavior.opaque,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Text(
+            "$text ",
+            style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                  color: Colors.black54,
+                ),
+          ),
+          Text(
+            actionText,
+            style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                  fontWeight: FontWeight.w700,
+                  color: Theme.of(context).primaryColor,
+                ),
+          )
+        ],
+      ),
+    );
+  }
+}
