@@ -1,5 +1,5 @@
 {
-    "name": "votify",
+    "name": "solutech_votify",
     "short_name": "Votify",
     "start_url": ".",
     "display": "standalone",
